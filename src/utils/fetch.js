@@ -3,7 +3,8 @@ import qs from 'qs'
 
 const fetch = axios.create({
   baseURL: '/',
-  timeout: 5000
+  timeout: 5000,
+  withCredentials: true
 })
 
 // http request 拦截器
@@ -40,7 +41,6 @@ fetch.interceptors.response.use(
 export function get (url, params = {}) {
   return new Promise((resolve, reject) => {
     fetch.get(url, {
-      withCredentials: true,
       params: params
     })
     .then(response => {

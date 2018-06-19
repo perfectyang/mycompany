@@ -3,13 +3,6 @@ import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 Vue.use(VueI18n)
 Vue.config.lang = window.localStorage.getItem('language') || 'zh'
-
-// import VueResource from 'vue-resource'
-// Vue.use(VueResource)
-// // 配置以application/x-www-form-urlencoded方式
-// Vue.http.options.emulateJSON = true
-// // REST/HTTP方式
-// Vue.http.options.emulateHTTP = true;
 // 入口布局组件
 // vuex state管理
 import store from './store'

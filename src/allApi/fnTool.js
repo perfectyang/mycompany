@@ -10,7 +10,6 @@ function genrateFn (opt) {
       let method = (extraOpt && extraOpt.method) || 'post'
       // 处理图片格式
       let config = null
-      console.log('extraOpt', extraOpt)
       if (extraOpt && extraOpt.type === 'form') {
         config = {
           headers: {
